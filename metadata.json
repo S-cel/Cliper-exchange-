@@ -1,0 +1,6 @@
+{
+  "name": "Cliper Exchange",
+  "description": "Cliper Exchange is a premier Nigerian-based digital asset and bank settlement ecosystem, powering high-yield crypto trading, token swaps, and local bank transfers within Nigeria and expanding access across other African corridors like Ghana, Kenya, and South Africa.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,199 @@
+@import "tailwindcss";
+
+/* Global smooth transition for background and borders */
+*, ::before, ::after {
+  transition: background-color 0.25s cubic-bezier(0.16, 1, 0.3, 1), 
+              border-color 0.25s cubic-bezier(0.16, 1, 0.3, 1), 
+              color 0.15s ease-out;
+}
+
+/* Base Light Mode definitions and styling overrides */
+.light-mode {
+  /* Override main background with extremely polished, elegant slate-50 light scheme */
+  background-color: #f8fafc !important;
+  color: #0f172a !important;
+}
+
+.light-mode #aura-terminal {
+  background-color: #f8fafc !important;
+  color: #0f172a !important;
+}
+
+/* Redefine container cards to pure bright modern white paneling */
+.light-mode header,
+.light-mode .bg-slate-900 {
+  background-color: #ffffff !important;
+  border-color: #cbd5e1 !important;
+  color: #0f172a !important;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.03), 0 1px 2px rgba(15, 23, 42, 0.05) !important;
+}
+
+/* Redefine inner wells, chat view backgrounds, lists of items, and table elements to soft slate-100 */
+.light-mode .bg-slate-950,
+.light-mode .bg-slate-950\/50,
+.light-mode .bg-slate-950\/60,
+.light-mode .bg-slate-950\/65,
+.light-mode .bg-slate-950\/70,
+.light-mode .bg-slate-950\/40,
+.light-mode .bg-teal-950\/80,
+.light-mode .bg-slate-900\/60,
+.light-mode .bg-slate-900\/40,
+.light-mode .bg-slate-850,
+.light-mode .bg-slate-800\/60,
+.light-mode .bg-slate-800\/40,
+.light-mode .hover\:bg-slate-850:hover,
+.light-mode .bg-slate-800 {
+  background-color: #f1f5f9 !important; /* slate-100 wellness background */
+  color: #0f172a !important;
+}
+
+/* Redefine borders around the app */
+.light-mode .border-slate-800,
+.light-mode .border-slate-805,
+.light-mode .border-slate-750,
+.light-mode .border-slate-700,
+.light-mode .border-slate-850 {
+  border-color: #cbd5e1 !important; /* clean light slate-300 borders */
+}
+
+/* Text overrides in Light Mode */
+.light-mode .text-slate-100,
+.light-mode .text-slate-200,
+.light-mode .text-white,
+.light-mode h1,
+.light-mode h2,
+.light-mode h3,
+.light-mode h4,
+.light-mode h5,
+.light-mode select {
+  color: #0f172a !important; /* Charcoal dark slate for display elements */
+}
+
+.light-mode .text-slate-300,
+.light-mode .text-slate-350,
+.light-mode .text-slate-400,
+.light-mode .text-slate-450,
+.light-mode .text-slate-500,
+.light-mode .text-slate-504,
+.light-mode .text-slate-505,
+.light-mode p,
+.light-mode span.text-slate-400,
+.light-mode label {
+  color: #334155 !important; /* Medium cool slate subtext color */
+}
+
+.light-mode select option {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+}
+
+/* Ensure action list, dropdown directory details and models look stunning in light theme */
+.light-mode .bg-indigo-950\/80,
+.light-mode .bg-indigo-950\/70,
+.light-mode .bg-indigo-950\/50 {
+  background-color: #e0e7ff !important; /* indigo pastel link background */
+  color: #3730a3 !important;
+  border-color: #c7d2fe !important;
+}
+
+.light-mode .bg-emerald-950\/80,
+.light-mode .bg-emerald-950\/45,
+.light-mode .bg-emerald-950\/50 {
+  background-color: #ecfdf5 !important; /* emerald pastel link background */
+  color: #065f46 !important;
+  border-color: #a7f3d0 !important;
+}
+
+.light-mode .bg-rose-950\/80 {
+  background-color: #fff1f2 !important; /* rose pastel background */
+  color: #9f1239 !important;
+  border-color: #fecdd3 !important;
+}
+
+.light-mode .bg-amber-950\/50,
+.light-mode .bg-amber-950\/40 {
+  background-color: #fffbeb !important; /* amber pastel background */
+  color: #92400e !important;
+  border-color: #fde68a !important;
+}
+
+.light-mode .bg-purple-950\/80 {
+  background-color: #faf5ff !important; /* violet pastel background */
+  color: #6b21a8 !important;
+  border-color: #e9d5ff !important;
+}
+
+.light-mode .bg-red-950\/45 {
+  background-color: #fef2f2 !important; /* red-50 error background override */
+  color: #991b1b !important;
+  border-color: #fca5a5 !important;
+}
+
+/* Force form inputs to modern white fields */
+.light-mode input,
+.light-mode textarea {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  border-color: #cbd5e1 !important;
+}
+
+.light-mode input:focus,
+.light-mode select:focus,
+.light-mode textarea:focus {
+  border-color: #6366f1 !important; /* purple accent on focus */
+}
+
+.light-mode input::placeholder,
+.light-mode textarea::placeholder {
+  color: #94a3b8 !important;
+}
+
+/* Chat response formatting text fixes */
+.light-mode strong.text-white,
+.light-mode .text-slate-150 {
+  color: #0f172a !important;
+}
+
+.light-mode .bg-slate-900\/40 {
+  background-color: #f8fafc !important;
+  border-color: #e2e8f0 !important;
+}
+
+/* Specific interactive buttons inside list nodes */
+.light-mode .text-indigo-400 {
+  color: #4f46e5 !important;
+}
+
+.light-mode .text-emerald-400 {
+  color: #059669 !important;
+}
+
+.light-mode .text-rose-400 {
+  color: #dc2626 !important;
+}
+
+.light-mode .text-purple-400 {
+  color: #7c3aed !important;
+}
+
+.light-mode .text-amber-400,
+.light-mode .text-yellow-500 {
+  color: #d97706 !important;
+}
+
+.light-mode .border-amber-500\/80 {
+  border-color: #d97706 !important;
+}
+
+.light-mode .border-amber-500\/50 {
+  border-color: #f59e0b !important;
+}
+
+/* Custom transitions and display elements */
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.animate-spin-slow {
+  animation: spin-slow 12s linear infinite;
+}
